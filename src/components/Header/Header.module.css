@@ -1,0 +1,66 @@
+.header {
+  min-width: 320px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+.logoAndTel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mainLogo {
+}
+
+.tel {
+  text-decoration: none;
+  padding-top: 10px;
+  color: white;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapperOfHeaderNavigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableOfNavigation {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.sotialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+}
+
+.telegram{
+    fill: #0088cc;
+}
+
+.instagram{
+fill: #C13584;
+}
