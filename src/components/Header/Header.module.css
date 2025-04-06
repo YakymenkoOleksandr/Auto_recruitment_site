@@ -1,23 +1,30 @@
 .header {
   min-width: 320px;
-  max-width: 480px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 10px;
-  align-items: center;
-  text-align: center;
   background-color: #000;
   color: white;
+  justify-content: center;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .logoAndTel {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 320px;
+  width: 100%;
+  align-items: center;
 }
 
 .mainLogo {
+  width: 60px;
+  height: 60px;
 }
 
 .tel {
@@ -34,6 +41,18 @@
 .wrapperOfHeaderNavigation {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: -100%;
+  transition: top 1s;
+  background-color: #000;
+  padding-top: 10px;
+  max-width: 320px;
+  width: 100%;
+  align-items: center;
+}
+
+.active {
+  top: 80px;
 }
 
 .tableOfNavigation {
@@ -63,4 +82,43 @@
 
 .instagram{
 fill: #C13584;
+}
+
+.burgerMenu{
+  display: block;
+  cursor: pointer;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+}
+
+.icon {
+  fill: whitesmoke;
+  background-color: #000;
+}
+
+@media (min-width: 800px) {
+  .wrapperOfHeaderNavigation {
+    position: static;
+    flex-direction: row;
+    top: 0;
+    transition: none;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+
+  .tableOfNavigation {
+    flex-direction: row;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+
+  .sotialMedia {
+    justify-content: flex-end;
+  }
 }

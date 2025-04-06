@@ -1,24 +1,52 @@
 import style from "./Header.module.css";
 import { FaTelegramPlane } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { useState } from "react";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <header className={style.header}>
         <div className={style.logoAndTel}>
-          <img src="" alt="Website logo" className={style.mainLogo} />
-          <a
-            href="tel:+380955144040"
-            title="Зателефонуйте нам"
-            className={style.tel}
-          >
-            +38 (095) 514-40-40
-          </a>
+          <img src="../../../public/img/NR_car_logo.jpg" alt="Website logo" className={style.mainLogo} />
+          {isOpen ? (
+            <IoClose
+              className={style.burgerMenu}
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            />
+          ) : (
+            <IoMenu
+              className={style.burgerMenu}
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            />
+          )}
         </div>
 
-        <nav className={style.wrapperOfHeaderNavigation}>
+        <nav
+          className={
+            isOpen
+              ? [style.wrapperOfHeaderNavigation, style.active].join(" ")
+              : style.wrapperOfHeaderNavigation
+          }
+        >
           <ul className={style.tableOfNavigation}>
+            <li>
+              <a
+                href="tel:+380955144040"
+                title="Зателефонуйте нам"
+                className={style.tel}
+              >
+                +38 (095) 514-40-40
+              </a>
+            </li>
             <li>
               <a href="#" className={style.navLink}>
                 Головна сторінка
