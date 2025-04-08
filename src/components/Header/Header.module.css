@@ -1,6 +1,4 @@
-.body{
-  min-width: 320px;
-}
+
 
 .header {
   width: 100%;
@@ -12,6 +10,9 @@
   justify-content: center;
   padding-left: 35px;
   padding-right: 35px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -26,16 +27,24 @@
 }
 
 .mainLogo {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.mainLogo:hover {
+  transform: scale(1.5);
 }
 
 .tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #fff;
   text-decoration: none;
-  padding-top: 10px;
-  color: white;
-  font-size: 20px;
 }
+
 
 .navLink {
   text-decoration: none;
@@ -85,15 +94,19 @@
 
 .sotialMedia {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
+  gap: 15px;
   list-style-type: none;
+  justify-content: center;
 }
 
 .svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.svg:hover {
+  transform: translateY(-3px);
 }
 
 .telegram {
@@ -114,11 +127,51 @@
   background-color: #000;
   width: 25px;
   height: 25px;
+  font-size: 28px;
+  color: white;
+  z-index: 1001;
+  transition: transform 0.3s;
 }
+
+.burgerMenu:hover {
+  color: #4da6ff;
+  transform: rotate(90deg);
+}
+
+.wrapperOfHeaderNavigation.active {
+  top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
 
 .icon {
   fill: whitesmoke;
   background-color: #000;
+}
+
+@media (max-width: 799px) {
+  .header {
+    padding: 15px 20px;
+  }
+  
+  .tableOfNavigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .navLink {
+    font-size: 20px;
+  }
+  
+  .sotialMedia {
+    justify-content: center;
+    padding: 20px 0;
+  }
 }
 
 @media (min-width: 800px) {
@@ -163,9 +216,10 @@
   }
 
   .tableOfNavigation {
+    display: flex;
+    gap: 30px;
     flex-direction: row;
     padding-bottom: 0;
-    gap: 40px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -194,6 +248,10 @@
   }
 
   .navLink{
+    position: relative;
+  padding: 5px 0;
+  font-size: 18px;
+  transition: color 0.3s;
     transition: font-size 0.5s;
   }
 
@@ -201,5 +259,20 @@
     font-size: 24px;
     color: #007BFF;
   }
+
+  .navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4da6ff;
+  transition: width 0.3s;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
 
 }

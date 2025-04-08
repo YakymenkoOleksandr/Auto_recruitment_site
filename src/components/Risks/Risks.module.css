@@ -1,103 +1,99 @@
-.wrapperForRisks{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 25px;
+.wrapperForRisks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px 0;
 }
 
-.headerOfRisks{
-    text-align: center;
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: whitesmoke;
-    
-}
-
-.wrapperForRisons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    
-}
-
-.cellOfRisk{
-    width: 280px;
-    height: 200px;
-    border: solid 1px whitesmoke;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: gray;
-}
-.cellOfRisk::before{
-
-}
-.cellOfRisk::after{
-
-}
-
-.headerCellOfRisk{
-    padding-bottom: 10px;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.textCellOfRisk{
-    text-align: justify;
-    display: flex;
-    align-items: end;
-    color: whitesmoke;
-    
-}
-
-@media (min-width: 800px) {
-    .wrapperForRisks{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 25px;
-    align-items: center;
-     
-}
-
-.headerOfRisks{
-    text-align: center;
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+.headerOfRisks {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
 .wrapperForRisons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.cellOfRisk {
+   width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.cellOfRisk:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cellOfRisk::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #4da6ff, #6bd9d9, transparent);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cellOfRisk:hover::before {
+  opacity: 0.3;
+}
+
+.headerCellOfRisk {
+  padding-bottom: 12px;
+  text-align: center;
+  color: #4da6ff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.textCellOfRisk {
+  text-align: center;
+  color: #e0e0e0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .wrapperForRisons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px 15px; 
-    justify-items: center; 
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    gap: 25px;
+    padding: 0 30px;
   }
 
-.cellOfRisk{
-    min-width: 280px;
-    max-width: 280px;
-    height: 200px;
-    border: solid 1px whitesmoke;
-    border-radius: 15px;
-    padding: 10px;
-}
-.cellOfRisk::before{
-
-}
-.cellOfRisk::after{
-
+  .cellOfRisk {
+    height: auto;
+    min-height: 200px;
+  }
 }
 
-.headerCellOfRisk{
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.textCellOfRisk{
-    text-align: justify
-}
+@media (min-width: 1024px) {
+  .wrapperForRisons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .headerOfRisks {
+    font-size: 32px;
+  }
 }

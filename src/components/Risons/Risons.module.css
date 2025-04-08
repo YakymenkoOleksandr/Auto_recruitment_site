@@ -1,38 +1,115 @@
-.wrapperOfRisons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.wrapperOfRisons {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+   animation: fadeIn 1s ease-out;
 }
 
-.headerOfRisons{
-    font-size: 24px;
-    color: whitesmoke;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.headerOfRisons {
+  font-size: clamp(24px, 3vw, 32px);
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, #4da6ff, #6bd9d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.headerOfRisons::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #4da6ff, #6bd9d9);
 }
 
 .listOfRisons {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    min-width: 280px;
-    width: 80%;
-    padding-bottom: 30px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  width: 100%;
+  padding: 30px 0;
 }
 
-.pointOfRisons{
-    color: whitesmoke;
-    padding-bottom: 10px;
-    font-size: 20px;
+.pointOfRisons {
+  position: relative;
+  padding-left: 35px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #f0f0f0;
+  transition: transform 0.3s;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
-.conclusion{
-    color: whitesmoke;
-    min-width: 280px;
-    width: 80%;
-    font-size: 20px;
-    padding-bottom: 30px;
+.pointOfRisons:hover {
+  transform: translateX(5px);
+  color: #4da6ff;
+}
+
+.pointOfRisons::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4da6ff;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.pointOfRisons:nth-child(1) { animation-delay: 0.3s; }
+.pointOfRisons:nth-child(2) { animation-delay: 0.6s; }
+.pointOfRisons:nth-child(3) { animation-delay: 0.9s; }
+.pointOfRisons:nth-child(4) { animation-delay: 1.2s; }
+.pointOfRisons:nth-child(5) { animation-delay: 1.5s; }
+.pointOfRisons:nth-child(6) { animation-delay: 1.8s; }
+
+.pointOfRisons::before {
+  transition: transform 0.3s;
+}
+
+.pointOfRisons:hover::before {
+  transform: scale(1.3);
+}
+
+.conclusion {
+  background: rgba(77, 166, 255, 0.1);
+  border-left: 4px solid #4da6ff;
+  padding: 25px;
+  border-radius: 0 8px 8px 0;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-top: 20px;
+  
+}
+
+@media (max-width: 480px) {
+  .conclusion {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .listOfRisons {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .pointOfRisons {
+    font-size: 16px;
+  }
 }
