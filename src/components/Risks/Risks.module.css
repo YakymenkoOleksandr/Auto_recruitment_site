@@ -1,0 +1,103 @@
+.wrapperForRisks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.headerOfRisks{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    
+}
+
+.wrapperForRisons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.cellOfRisk{
+    width: 280px;
+    height: 200px;
+    border: solid 1px whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: gray;
+}
+.cellOfRisk::before{
+
+}
+.cellOfRisk::after{
+
+}
+
+.headerCellOfRisk{
+    padding-bottom: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.textCellOfRisk{
+    text-align: justify;
+    display: flex;
+    align-items: end;
+    color: whitesmoke;
+    
+}
+
+@media (min-width: 800px) {
+    .wrapperForRisks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    align-items: center;
+     
+}
+
+.headerOfRisks{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.wrapperForRisons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px; 
+    justify-items: center; 
+    max-width: 900px;
+  }
+
+.cellOfRisk{
+    min-width: 280px;
+    max-width: 280px;
+    height: 200px;
+    border: solid 1px whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cellOfRisk::before{
+
+}
+.cellOfRisk::after{
+
+}
+
+.headerCellOfRisk{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.textCellOfRisk{
+    text-align: justify
+}
+}

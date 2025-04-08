@@ -1,6 +1,9 @@
-.header {
+.body{
   min-width: 320px;
-  max-width: 100%;
+}
+
+.header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -11,15 +14,15 @@
   padding-right: 35px;
 }
 
-.logoAndTel {
+.logo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  min-width: 320px;
   width: 100%;
   align-items: center;
+  cursor: pointer;
 }
 
 .mainLogo {
@@ -31,6 +34,7 @@
   text-decoration: none;
   padding-top: 10px;
   color: white;
+  font-size: 20px;
 }
 
 .navLink {
@@ -46,13 +50,27 @@
   transition: top 1s;
   background-color: #000;
   padding-top: 10px;
-  max-width: 320px;
   width: 100%;
   align-items: center;
 }
 
+.wrapperOfSocial {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  transition: top 1s;
+  background-color: #000;
+  padding-top: 10px;
+  width: 100%;
+}
+
 .active {
-  top: 80px;
+  top: 60px;
+}
+
+.active1 {
+  top: 210px;
 }
 
 .tableOfNavigation {
@@ -61,6 +79,8 @@
   list-style-type: none;
   gap: 10px;
   padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .sotialMedia {
@@ -76,15 +96,19 @@
   height: 20px;
 }
 
-.telegram{
-    fill: #0088cc;
+.telegram {
+  fill: #0088cc;
 }
 
-.instagram{
-fill: #C13584;
+.instagram {
+  fill: #c13584;
 }
 
-.burgerMenu{
+.viber{
+  fill: #7B519D
+}
+
+.burgerMenu {
   display: block;
   cursor: pointer;
   background-color: #000;
@@ -98,14 +122,40 @@ fill: #C13584;
 }
 
 @media (min-width: 800px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #000;
+    color: white;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 80px;
+  }
+
   .wrapperOfHeaderNavigation {
     position: static;
     flex-direction: row;
     top: 0;
     transition: none;
-    max-width: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+  }
+
+  .wrapperOfSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    transition: none;
+    background-color: #000;
+    padding-top: 0px;
+    width: 60px;
+
   }
 
   .burgerMenu {
@@ -115,10 +165,41 @@ fill: #C13584;
   .tableOfNavigation {
     flex-direction: row;
     padding-bottom: 0;
-    gap: 20px;
+    gap: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
+
 
   .sotialMedia {
     justify-content: flex-end;
   }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    width: 60px;
+  }
+
+  .tel{
+    transition: font-size 0.5s;
+  }
+
+  .tel:hover{
+    font-size: 24px;
+    color: #007BFF;
+  }
+
+  .navLink{
+    transition: font-size 0.5s;
+  }
+
+  .navLink:hover{
+    font-size: 24px;
+    color: #007BFF;
+  }
+
 }
