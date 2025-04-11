@@ -48,7 +48,7 @@ export default function Stages() {
   return (
     <div className={style.wrapper}>
       <div className={style.wrapperForStages}>
-        <h4 className={style.titleForStages}>Автопідбір під ключ</h4>
+        <h2 className={style.titleForStages}>Автопідбір під ключ</h2>
         <ul className={style.listForStages}>
           {stages.map((stage, index) => (
             <li key={index} className={style.pointOfListForStages}>
