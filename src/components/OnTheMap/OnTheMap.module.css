@@ -1,0 +1,26 @@
+.wrapperForMapBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    
+
+}
+
+.headerForMapBlock{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.map{
+    width: 80%;
+    height: 300px;
+}
+
+@media (min-width: 800px){
+    .map{
+    height: 400px;
+}
+}

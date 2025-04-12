@@ -5,3 +5,7 @@
 .navLink, .tel, .svg {
   transition: var(--transition);
 }
+
+#oneTimeCarInspecrion {
+  scroll-margin-top: 80px; 
+}

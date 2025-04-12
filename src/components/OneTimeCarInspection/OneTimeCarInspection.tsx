@@ -2,9 +2,11 @@ import { useState } from "react";
 import style from "./OneTimeCarInspection.module.css";
 import { TfiArrowCircleDown } from "react-icons/tfi";
 import { TfiArrowCircleUp } from "react-icons/tfi";
+import { useRef } from "react";
 
 export default function OneTimeCarInspection() {
   const [expandedStages, setExpandedStages] = useState<number[]>([]);
+  const oneTimeCarInspecrionRef = useRef(null);
 
   const toggleStage = (index: number) => {
     if (expandedStages.includes(index)) {
@@ -26,7 +28,7 @@ export default function OneTimeCarInspection() {
   ];
 
   return (
-    <div className={style.wrapper}>
+    <div ref={oneTimeCarInspecrionRef} id="oneTimeCarInspecrion" className={style.wrapper}>
       <div className={style.wrapperForStages}>
         <h2 className={style.titleForStages}>Разовий огляд авто</h2>
         <ul className={style.listForStages}>

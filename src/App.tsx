@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Stages from './components/Stages/Stages'
 import OneTimeCarInspection from './components/OneTimeCarInspection/OneTimeCarInspection'
 import AboutMe from './components/AboutMe/AboutMe'
+import OnTheMap from './components/OnTheMap/OnTheMap'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Risons />
       <Stages />
       <OneTimeCarInspection />
+      <OnTheMap />
       <Footer /> 
     </>
   )
