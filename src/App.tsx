@@ -7,6 +7,7 @@ import Stages from './components/Stages/Stages'
 import OneTimeCarInspection from './components/OneTimeCarInspection/OneTimeCarInspection'
 import AboutMe from './components/AboutMe/AboutMe'
 import OnTheMap from './components/OnTheMap/OnTheMap'
+import PhotoCarousel from './components/PhotoСarousel/PhotoCarousel'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Risons />
       <Stages />
       <OneTimeCarInspection />
+      <PhotoCarousel />
       <OnTheMap />
       <Footer /> 
     </>
