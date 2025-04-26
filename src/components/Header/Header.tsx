@@ -20,7 +20,7 @@ export default function Header() {
     <header className={style.header}>
       <div className={style.logo}>
         <img
-          src="./public/img/NR_car_logo.jpg"
+          src="./img/NR_car_logo.jpg"
           alt="Website logo"
           className={style.mainLogo}
         />

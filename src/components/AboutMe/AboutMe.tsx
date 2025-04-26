@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <div className={style.wrapperForAboutMe}>
       <img
-        src="./public/img/Ruslan_1_desktop_enhanced.jpg"
+        src="./img/Ruslan_1_desktop_enhanced.jpg"
         alt="Руслан Науменко автоексперт"
         className={style.mainImg}
       />
