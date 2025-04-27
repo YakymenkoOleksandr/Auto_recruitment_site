@@ -1,3 +1,101 @@
-.galery{
-    background-color: aliceblue;
+.galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  gap: 5px;
+}
+
+.galeryImg {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px rgba(175, 175, 255, 0.2);
+  max-width: 100%;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+.blockOfPhotoAndComent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.buttonForGalerySwitch {
+  background: none;
+  background-color: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svgForGalery {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  color: white;
+  transition: transform 0.3s ease, color 1s ease-in-out;
+}
+
+.svgForGaleryDis {
+  width: 25px;
+  height: 25px;
+  color: rgb(122, 122, 122);
+  transition: transform 0.3s ease, color 1s ease-in-out;
+}
+
+.svgForGalery:hover {
+  transform: scale(1.2);
+  color: rgb(22, 165, 227);
+}
+
+.svgForGaleryDis:hover {
+  transform: scale(1.2);
+  color: rgb(122, 122, 122);
+}
+
+.headerMyCarSearch {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.markAndModelCar {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.history {
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 15px;
+}
+
+.imgAndBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/*Планшети*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .galeryImg {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .galeryImg {
+    width: 700px;
+    height: 550px;
+  }
 }
