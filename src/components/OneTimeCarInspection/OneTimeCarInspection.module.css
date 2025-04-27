@@ -25,7 +25,7 @@
 }
 
 .textOfPointOfListForStages{
-margin-bottom: 10px;
+margin-bottom: 15px;
 }
 
 .pointOfListForStages{
@@ -51,7 +51,16 @@ margin-bottom: 10px;
 }
 
 .icon{
-    min-width: 20px;
-    min-height: 20px;
+    min-width: 25px;
+    min-height: 25px;
     margin-left: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon:hover{
+   transform: rotate(-180deg);;
+}
+
+.icon:active{
+   transform: rotate(-180deg);;
 }
