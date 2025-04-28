@@ -16,6 +16,13 @@ export default function Header() {
     }
   };
 
+  const scrolToStages = () => {
+    const element1 = document.getElementById("stages");
+    if (element1) {
+      element1.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
   return (
     <header className={style.header}>
       <div className={style.logo}>
@@ -64,7 +71,14 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="#" className={style.navLink}>
+            <a href="#stages"
+              className={style.navLink}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(false);
+                scrolToStages();
+              }}
+            >
               Автопідбір під ключ
             </a>
           </li>

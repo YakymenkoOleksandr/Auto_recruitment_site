@@ -10,6 +10,11 @@
   scroll-margin-top: 80px; 
 }
 
+#stages {
+  scroll-margin-top: 80px;
+}
+
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
                Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;

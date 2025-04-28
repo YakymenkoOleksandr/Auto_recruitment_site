@@ -2,9 +2,12 @@ import { useState } from "react";
 import style from "./Stages.module.css";
 import { TfiArrowCircleDown } from "react-icons/tfi";
 import { TfiArrowCircleUp } from "react-icons/tfi";
+import { useRef } from "react";
 
 export default function Stages() {
   const [expandedStages, setExpandedStages] = useState<number[]>([]);
+
+  const stagesRef = useRef(null)
 
   const toggleStage = (index: number) => {
     if (expandedStages.includes(index)) {
@@ -46,7 +49,7 @@ export default function Stages() {
   ];
 
   return (
-    <div className={style.wrapper}>
+    <div ref={stagesRef} id="stages" className={style.wrapper}>
       <div className={style.wrapperForStages}>
         <h2 className={style.titleForStages}>Автопідбір під ключ</h2>
         <ul className={style.listForStages}>
