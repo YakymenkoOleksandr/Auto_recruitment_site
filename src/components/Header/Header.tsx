@@ -5,33 +5,43 @@ import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { FaViber } from "react-icons/fa";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const scrolToOneTimeCarInspection = () => {
-    const element = document.getElementById("oneTimeCarInspecrion");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+  const handleScrolTo = (sectionId: string) => {
+    setIsOpen(false);
+    if (window.location.pathname !== "/") {
+      navigate("/", {});
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    } else {
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
     }
   };
-
-  const scrolToStages = () => {
-    const element1 = document.getElementById("stages");
-    if (element1) {
-      element1.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }
 
   return (
     <header className={style.header}>
       <div className={style.logo}>
-        <img
-          src="./img/NR_car_logo.jpg"
-          alt="Website logo"
-          className={style.mainLogo}
-        />
+        <NavLink to="/">
+          <img
+            src="./img/NR_car_logo.jpg"
+            alt="Website logo"
+            className={style.mainLogo}
+          />
+        </NavLink>
         {isOpen ? (
           <IoClose
             className={style.burgerMenu}
@@ -72,29 +82,28 @@ export default function Header() {
             </NavLink>
           </li>
           <li>
-            <a href="#stages"
+            <NavLink
+              to="/"
               className={style.navLink}
               onClick={(e) => {
                 e.preventDefault();
-                setIsOpen(false);
-                scrolToStages();
+                handleScrolTo("stages");
               }}
             >
               Автопідбір під ключ
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#oneTimeCarInspecrion"
+            <NavLink
+              to="/"
               className={style.navLink}
               onClick={(e) => {
                 e.preventDefault();
-                setIsOpen(false);
-                scrolToOneTimeCarInspection();
+                handleScrolTo("oneTimeCarInspecrion");
               }}
             >
               Разовий огляд авто
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
