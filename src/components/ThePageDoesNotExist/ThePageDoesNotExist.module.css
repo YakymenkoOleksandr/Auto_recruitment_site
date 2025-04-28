@@ -1,0 +1,12 @@
+.wrapperForNotExistPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: auto;
+}
+
+.textForNotExistPage {
+    font-size: 24px;
+    text-align: center;
+}

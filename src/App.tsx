@@ -1,29 +1,17 @@
-import './App.css'
-import Header from './components/Header/Header'
-import Risks from './components/Risks/Risks'
-import Risons from './components/Risons/Risons'
-import Footer from './components/Footer/Footer'
-import Stages from './components/Stages/Stages'
-import OneTimeCarInspection from './components/OneTimeCarInspection/OneTimeCarInspection'
-import AboutMe from './components/AboutMe/AboutMe'
-import OnTheMap from './components/OnTheMap/OnTheMap'
-import PhotoCarousel from './components/PhotoСarousel/PhotoCarousel'
+import "./App.css";
+import MainPage from "./pages/MainPage.tsx";
+import NotFound from "./pages/NotFound.tsx"
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <AboutMe />
-      <Risks />
-      <Risons />
-      <Stages />
-      <OneTimeCarInspection />
-      <PhotoCarousel />
-      <OnTheMap />
-      <Footer /> 
-    </>
-  )
+    <div>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;

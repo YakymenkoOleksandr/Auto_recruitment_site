@@ -5,6 +5,7 @@ import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { FaViber } from "react-icons/fa";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,9 +67,9 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="#" className={style.navLink}>
+            <NavLink to="/" className={style.navLink}>
               Головна сторінка
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="#stages"
