@@ -1,8 +1,10 @@
 import style from "./AboutMe.module.css";
+import { useRef } from "react";
 
 export default function AboutMe() {
+  const aboutMe = useRef(null);
   return (
-    <div className={style.wrapperForAboutMe}>
+    <div className={style.wrapperForAboutMe} ref={aboutMe} id="aboutMe">
       <img
         src="./img/Ruslan_1_desktop_enhanced.jpg"
         alt="Руслан Науменко автоексперт"

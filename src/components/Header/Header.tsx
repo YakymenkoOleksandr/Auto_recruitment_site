@@ -33,13 +33,17 @@ export default function Header() {
   };
 
   return (
-    <header className={style.header}>
+    <header className={style.header} >
       <div className={style.logo}>
         <NavLink to="/">
           <img
             src="./img/NR_car_logo.jpg"
             alt="Website logo"
             className={style.mainLogo}
+            onClick={(e) => {
+                e.preventDefault();
+                handleScrolTo("aboutMe");
+              }}
           />
         </NavLink>
         {isOpen ? (
@@ -77,7 +81,14 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <NavLink to="/" className={style.navLink}>
+            <NavLink
+              to="/"
+              className={style.navLink}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrolTo("aboutMe");
+              }}
+            >
               Головна сторінка
             </NavLink>
           </li>
