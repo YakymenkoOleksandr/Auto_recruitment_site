@@ -1,0 +1,136 @@
+.navLink {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.5s ease-in-out, color 0.3s ease-in-out;
+  transform-origin: center bottom;
+  display: inline-block;
+}
+
+.navLink:hover {
+    transform: scale(1.2);
+    color: #007bff;
+  }
+
+.tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+  font-size: 18px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.tel:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.tel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4da6ff;
+  transition: width 0.3s;
+}
+
+.tel:hover::after {
+  width: 100%;
+}
+
+.wrapperOfHeaderNavigation {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  transition: top 1s;
+  background-color: #000;
+  padding-top: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.active {
+  top: 60px;
+}
+
+.tableOfNavigation {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrapperOfHeaderNavigation.active {
+  top: 50px;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 799px) {
+  .tableOfNavigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 800px) {
+  .wrapperOfHeaderNavigation {
+    position: static;
+    flex-direction: row;
+    top: 0;
+    transition: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    width: auto;
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+
+  .tableOfNavigation {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .navLink {
+    position: relative;
+    padding: 5px 0;
+  }
+
+  .navLink:hover {
+    transform: scale(1.2);
+    color: #007bff;
+  }
+
+  .navLink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4da6ff;
+    transition: width 0.3s;
+  }
+
+  .navLink:hover::after {
+    width: 100%;
+  }
+}

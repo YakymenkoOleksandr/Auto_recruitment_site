@@ -1,15 +1,13 @@
-
-
 .header {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   gap: 10px;
   background-color: #000;
   color: white;
   justify-content: center;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 10%;
+  padding-right: 10%;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,101 +22,6 @@
   width: 100%;
   align-items: center;
   cursor: pointer;
-}
-
-.mainLogo {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s;
-}
-
-.mainLogo:hover {
-  transform: scale(1.5);
-}
-
-.tel {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-}
-
-
-.navLink {
-  text-decoration: none;
-  color: white;
-}
-
-.wrapperOfHeaderNavigation {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: -100%;
-  transition: top 1s;
-  background-color: #000;
-  padding-top: 10px;
-  width: 100%;
-  align-items: center;
-}
-
-.wrapperOfSocial {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: -100%;
-  transition: top 1s;
-  background-color: #000;
-  padding-top: 10px;
-  width: 100%;
-}
-
-.active {
-  top: 60px;
-}
-
-.active1 {
-  top: 210px;
-}
-
-.tableOfNavigation {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  gap: 10px;
-  padding-bottom: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.sotialMedia {
-  display: flex;
-  gap: 15px;
-  list-style-type: none;
-  justify-content: center;
-}
-
-.svg {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s;
-}
-
-.svg:hover {
-  transform: translateY(-3px);
-}
-
-.telegram {
-  fill: #0088cc;
-}
-
-.instagram {
-  fill: #c13584;
-}
-
-.viber{
-  fill: #7B519D
 }
 
 .burgerMenu {
@@ -138,143 +41,33 @@
   transform: rotate(90deg);
 }
 
-.wrapperOfHeaderNavigation.active {
-  top: 80px;
-  height: calc(100vh - 80px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
-}
-
-
-.icon {
-  fill: whitesmoke;
-  background-color: #000;
-}
-
-@media (max-width: 799px) {
-  .header {
-    padding: 15px 20px;
-  }
-  
-  .tableOfNavigation {
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
-  
-  .navLink {
-    font-size: 20px;
-  }
-  
-  .sotialMedia {
-    justify-content: center;
-    padding: 20px 0;
-  }
-}
-
 @media (min-width: 800px) {
-  body{
+  body {
     padding: 0;
     margin: 0;
   }
 
   .header {
     width: 100%;
-    max-width: 100vw; 
+    max-width: 100vw;
     display: flex;
     flex-direction: row;
     gap: 10px;
     background-color: #000;
     color: white;
     justify-content: space-between;
-    align-items: center; 
-    padding: 0 35px; 
-    height: 80px;
-    box-sizing: border-box; 
-  }
-
-  .wrapperOfHeaderNavigation {
-    position: static;
-    flex-direction: row;
-    top: 0;
-    transition: none;
     align-items: center;
-    justify-content: center;
-    padding-top: 0;
-    width: auto; 
-    flex-grow: 1; 
-    margin: 0 20px; 
-  }
-   .wrapperOfSocial {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    position: static;
-    background-color: transparent; 
-    padding: 0;
-    width: auto; 
+    padding: 0 35px;
+    height: 80px;
+    box-sizing: border-box;
   }
 
   .burgerMenu {
     display: none;
   }
 
-  .tableOfNavigation {
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-
-  .sotialMedia {
-    justify-content: flex-end;
-  }
-
   .logo {
-    width: auto; 
-    min-width: 60px; 
+    width: auto;
+    min-width: 60px;
   }
-
-  .tel{
-    transition: font-size 0.5s;
-  }
-
-  .tel:hover{
-    font-size: 24px;
-    color: #007BFF;
-  }
-
-  .navLink{
-    position: relative;
-  padding: 5px 0;
-  font-size: 18px;
-  transition: color 0.3s;
-    transition: font-size 0.5s;
-  }
-
-  .navLink:hover{
-    font-size: 24px;
-    color: #007BFF;
-  }
-
-  .navLink::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #4da6ff;
-  transition: width 0.3s;
-}
-
-.navLink:hover::after {
-  width: 100%;
-}
-
 }

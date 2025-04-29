@@ -1,0 +1,65 @@
+.wrapperOfSocial {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  transition: top 1s;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.active1 {
+  top: 50px;
+}
+
+.sotialMedia {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.svg:hover {
+  transform: translateY(-3px);
+}
+
+.telegram {
+  fill: #0088cc;
+}
+
+.instagram {
+  fill: #c13584;
+}
+
+.viber {
+  fill: #7b519d;
+}
+
+@media (max-width: 799px) {
+  .sotialMedia {
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .wrapperOfSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+  }
+
+  .sotialMedia {
+    justify-content: flex-end;
+  }
+}
