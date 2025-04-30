@@ -1,13 +1,13 @@
 import style from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
-
+import { FC } from "react";
 
 interface NavigationProps {
-    isOpen: boolean;
-    handleScrolTo: (sectionId: string) => void;
+  isOpen: boolean;
+  handleScrolTo: (sectionId: string) => void;
 }
 
-const Navigation = ({isOpen, handleScrolTo}: NavigationProps) => {
+const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
   return (
     <nav
       className={

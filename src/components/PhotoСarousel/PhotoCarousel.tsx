@@ -1,10 +1,8 @@
 import style from "./PhotoCarousel.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, MouseEvent, FC } from "react";
 import { PropagateLoader } from "react-spinners";
 import photoData from "./Photo.json";
-import type { MouseEvent } from "react";
-import { FiArrowLeftCircle } from "react-icons/fi";
-import { FiArrowRightCircle } from "react-icons/fi";
+import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 
 interface PhotoItem {
   id: number;
@@ -13,27 +11,29 @@ interface PhotoItem {
   car?: string;
 }
 
-export default function PhotoCarousel() {
+const PhotoCarousel: FC = () => {
   const [numOfFoto, setNumOfFoto] = useState<number>(1);
   const [photoArray, setPhotoArray] = useState<PhotoItem[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   function hendlerPlus(e: MouseEvent<HTMLButtonElement>): void {
     e.preventDefault();
-    if (numOfFoto <= photoArray.length) setNumOfFoto((prev) => prev + 1);
+    if (numOfFoto < photoArray.length) setNumOfFoto((prev) => prev + 1);
   }
 
   function hendlerMinus(e: MouseEvent<HTMLButtonElement>): void {
     e.preventDefault();
-    if (numOfFoto >= 1) setNumOfFoto((prev) => prev - 1);
+    if (numOfFoto > 1) setNumOfFoto((prev) => prev - 1);
   }
 
-  useEffect(() => {
+  useEffect((): void => {
     setPhotoArray(photoData);
     setIsLoading(false);
   }, []);
 
-  const currentPhoto = photoArray.find((item) => item.id === numOfFoto);
+  const currentPhoto: PhotoItem | undefined = photoArray.find(
+    (item) => item.id === numOfFoto
+  );
 
   return (
     <>
@@ -94,4 +94,6 @@ export default function PhotoCarousel() {
       <p className={style.history}>{currentPhoto?.coment}</p>
     </>
   );
-}
+};
+
+export default PhotoCarousel;

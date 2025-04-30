@@ -7,8 +7,9 @@ import OneTimeCarInspection from "../components/OneTimeCarInspection/OneTimeCarI
 import AboutMe from "../components/AboutMe/AboutMe";
 import OnTheMap from "../components/OnTheMap/OnTheMap";
 import PhotoCarousel from "../components/PhotoСarousel/PhotoCarousel";
+import { FC } from "react";
 
- const MainPage: React.FC = () => {
+const MainPage: FC = () => {
   return (
     <div>
       <Header />
@@ -22,6 +23,6 @@ import PhotoCarousel from "../components/PhotoСarousel/PhotoCarousel";
       <Footer />
     </div>
   );
-}
+};
 
 export default MainPage;

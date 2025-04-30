@@ -1,12 +1,12 @@
 import style from "./Logo.module.css";
 import { NavLink } from "react-router-dom";
+import { FC } from "react";
 
 interface LogoProps {
-    handleScrolTo: (sectionId: string) => void;
+  handleScrolTo: (sectionId: string) => void;
 }
 
-const Logo = ({ handleScrolTo }: LogoProps) => {
-    
+const Logo: FC<LogoProps> = ({ handleScrolTo }) => {
   return (
     <NavLink to="/">
       <img

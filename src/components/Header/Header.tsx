@@ -1,13 +1,12 @@
 import style from "./Header.module.css";
-import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { useState, FC } from "react";
+import { IoMenu, IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import SocialMediaNavigation from "../SocialMediaNavigation/SocialMediaNavigation";
 import Logo from "../Logo/Logo";
 
-export default function Header() {
+const Header: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const navigate = useNavigate();
 
@@ -36,9 +35,19 @@ export default function Header() {
       <div className={style.logo}>
         <Logo handleScrolTo={handleScrolTo} />
         {isOpen ? (
-          <IoClose className={style.burgerMenu} onClick={() => { setIsOpen(!isOpen);}} />
+          <IoClose
+            className={style.burgerMenu}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
         ) : (
-          <IoMenu className={style.burgerMenu} onClick={() => { setIsOpen(!isOpen);}} />
+          <IoMenu
+            className={style.burgerMenu}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
         )}
       </div>
 
@@ -46,4 +55,6 @@ export default function Header() {
       <SocialMediaNavigation isOpen={isOpen} />
     </header>
   );
-}
+};
+
+export default Header;

@@ -1,8 +1,8 @@
 import style from "./AboutMe.module.css";
-import { useRef } from "react";
+import { useRef, FC } from "react";
 
-export default function AboutMe() {
-  const aboutMe = useRef(null);
+const AboutMe: FC = () => {
+  const aboutMe = useRef<HTMLDivElement>(null);
   return (
     <div className={style.wrapperForAboutMe} ref={aboutMe} id="aboutMe">
       <img
@@ -17,7 +17,9 @@ export default function AboutMe() {
         розпізнавати навіть найменші технічні нюанси та приховані дефекти. Тому
         хочу трошки більше розповісти про нюанси, які бувають при підборі
         автівки, а також чому варто скористатися послугами автопідбору.
-          </p>
+      </p>
     </div>
   );
-}
+};
+
+export default AboutMe;

@@ -1,6 +1,7 @@
 import style from "./Risks.module.css";
+import { FC } from "react";
 
-export default function Risks() {
+const Risks: FC = () => {
   return (
     <div className={style.wrapperForRisks}>
       <h3 className={style.headerOfRisks}>
@@ -65,4 +66,6 @@ export default function Risks() {
       </div>
     </div>
   );
-}
+};
+
+export default Risks;

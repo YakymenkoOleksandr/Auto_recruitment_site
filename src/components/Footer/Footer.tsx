@@ -3,8 +3,9 @@ import { IoLocationOutline, IoTimeOutline } from "react-icons/io5";
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsInstagram, BsFacebook } from "react-icons/bs";
+import { FC } from "react";
 
-export default function Footer() {
+const Footer: FC = () => {
   return (
     <footer className={style.footer}>
       <div className={style.footerContainer}>
@@ -13,7 +14,7 @@ export default function Footer() {
           <h3 className={style.blockTitle}>Контакти</h3>
           <div className={style.contactItem}>
             <IoLocationOutline className={style.icon} />
-            <span>м. Київ, вул. Прикладна, 12</span>
+            <span>вулиця Охтирська, 8, Київ, 01138</span>
           </div>
           <div className={style.contactItem}>
             <IoTimeOutline className={style.icon} />
@@ -25,22 +26,39 @@ export default function Footer() {
           </div>
           <div className={style.contactItem}>
             <MdOutlineEmail className={style.icon} />
-            <a href="mailto:ruslan_naumenko@gmail.com">ruslan_naumenko@gmail.com</a>
+            <a href="mailto:ruslan_naumenko@gmail.com">
+              ruslan_naumenko@gmail.com
+            </a>
           </div>
         </div>
 
         <div className={style.socialBlock}>
           <h3 className={style.blockTitle}>Соціальні мережі</h3>
           <div className={style.socialLinks}>
-            <a href="https://www.instagram.com/NR_car" target="_blank" rel="noopener noreferrer" className={style.socialLink}>
+            <a
+              href="https://www.instagram.com/NR_car"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.socialLink}
+            >
               <BsInstagram className={style.socialIcon} />
               <span>Instagram</span>
             </a>
-            <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" className={style.socialLink}>
+            <a
+              href="https://t.me/your_channel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.socialLink}
+            >
               <FaTelegramPlane className={style.socialIcon} />
               <span>Telegram</span>
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={style.socialLink}>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.socialLink}
+            >
               <BsFacebook className={style.socialIcon} />
               <span>Facebook</span>
             </a>
@@ -50,11 +68,21 @@ export default function Footer() {
         <div className={style.navBlock}>
           <h3 className={style.blockTitle}>Навігація</h3>
           <nav className={style.navLinks}>
-            <a href="/" className={style.navLink}>Головна</a>
-            <a href="/services" className={style.navLink}>Послуги</a>
-            <a href="/about" className={style.navLink}>Про нас</a>
-            <a href="/blog" className={style.navLink}>Блог</a>
-            <a href="/contacts" className={style.navLink}>Контакти</a>
+            <a href="/" className={style.navLink}>
+              Головна
+            </a>
+            <a href="/services" className={style.navLink}>
+              Послуги
+            </a>
+            <a href="/about" className={style.navLink}>
+              Про нас
+            </a>
+            <a href="/blog" className={style.navLink}>
+              Блог
+            </a>
+            <a href="/contacts" className={style.navLink}>
+              Контакти
+            </a>
           </nav>
         </div>
       </div>
@@ -65,4 +93,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

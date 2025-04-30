@@ -2,10 +2,10 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ThePageDoesNotExist from "../components/ThePageDoesNotExist/ThePageDoesNotExist";
 import style from "./NotFound.module.css";
-import { useEffect } from "react";
+import { useEffect, FC } from "react";
 import { useNavigate } from "react-router-dom";
 
-const NotFound: React.FC = () => {
+const NotFound: FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
