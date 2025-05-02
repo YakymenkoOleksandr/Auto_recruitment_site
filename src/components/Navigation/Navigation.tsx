@@ -1,6 +1,7 @@
 import style from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 interface NavigationProps {
   isOpen: boolean;
@@ -8,6 +9,7 @@ interface NavigationProps {
 }
 
 const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
+  const { t } = useTranslation();
   return (
     <nav
       className={
@@ -35,7 +37,7 @@ const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
               handleScrolTo("aboutMe");
             }}
           >
-            Головна сторінка
+            {t("navigation.home")}
           </NavLink>
         </li>
         <li>
@@ -47,7 +49,7 @@ const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
               handleScrolTo("stages");
             }}
           >
-            Автопідбір під ключ
+            {t("navigation.full_service")}
           </NavLink>
         </li>
         <li>
@@ -59,7 +61,7 @@ const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
               handleScrolTo("oneTimeCarInspecrion");
             }}
           >
-            Разовий огляд авто
+            {t("navigation.inspection")}
           </NavLink>
         </li>
       </ul>

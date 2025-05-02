@@ -3,6 +3,7 @@ import { useEffect, useState, MouseEvent, FC } from "react";
 import { PropagateLoader } from "react-spinners";
 import photoData from "./Photo.json";
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 interface PhotoItem {
   id: number;
@@ -15,6 +16,7 @@ const PhotoCarousel: FC = () => {
   const [numOfFoto, setNumOfFoto] = useState<number>(1);
   const [photoArray, setPhotoArray] = useState<PhotoItem[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const { t } = useTranslation();
 
   function hendlerPlus(e: MouseEvent<HTMLButtonElement>): void {
     e.preventDefault();
@@ -46,7 +48,7 @@ const PhotoCarousel: FC = () => {
           />
         ) : (
           <div className={style.blockOfPhotoAndComent}>
-            <h5 className={style.headerMyCarSearch}>Мої автопідбори</h5>
+              <h5 className={style.headerMyCarSearch}>{t("photoCarousel.headerMyCarSearch")}</h5>
             <p className={style.markAndModelCar}>{currentPhoto?.car}</p>
             <div className={style.imgAndBtns}>
               {numOfFoto > 1 ? (

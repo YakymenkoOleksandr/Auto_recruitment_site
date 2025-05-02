@@ -1,66 +1,58 @@
 import style from "./Risks.module.css";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 const Risks: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={style.wrapperForRisks}>
       <h3 className={style.headerOfRisks}>
-        Які бувають проблеми у вживаних автомобілів?
+        {t("risks.mainHeaderRisks")}
       </h3>
       <div className={style.wrapperForRisons}>
         <div className={style.cellOfRisk}>
           <h4 className={style.headerCellOfRisk}>
-            Не всі авто однаково надійні.
+            {t("risks.headerCellOfRisk1")}
           </h4>
           <p className={style.textCellOfRisk}>
-            У кожного виробника є моделі, які часто ламаються або потребують
-            дорогого обслуговування. Без досвіду легко купити “проблемну”
-            машину, навіть якщо виглядає ідеально.
+            {t("risks.textCellOfRisk1")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>Скручений пробіг.</h4>
+          <h4 className={style.headerCellOfRisk}>{t("risks.headerCellOfRisk2")}</h4>
           <p className={style.textCellOfRisk}>
-            Одна з найпоширеніших шахрайських схем на ринку вживаних авто.
-            Недобросовісні продавці легко можуть "омолодити" авто на сотні тисяч
-            кілометрів.
+            {t("risks.textCellOfRisk2")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
           <h4 className={style.headerCellOfRisk}>
-            Авто після ДТП? Ремонт не завжди якісний.
+            {t("risks.headerCellOfRisk3")}
           </h4>
           <p className={style.textCellOfRisk}>
-            Щоб продати машину швидше, власники часто звертаються до дешевих
-            майстрів, використовують сумнівні матеріали й нехтують технологією
-            відновлення.
+            {t("risks.textCellOfRisk3")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
           <h4 className={style.headerCellOfRisk}>
-            Часто авто вимагає дорогого ремонту.
+            {t("risks.headerCellOfRisk4")}
           </h4>
           <p className={style.textCellOfRisk}>
-            Наближається строк заміни дорогих вузлів (ГРМ, турбіна, коробка,
-            ходова).
+            {t("risks.textCellOfRisk4")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>Прихована історія ДТП</h4>
+          <h4 className={style.headerCellOfRisk}>{t("risks.headerCellOfRisk5")}</h4>
           <p className={style.textCellOfRisk}>
-            Багато власників ремонтують авто після аварії без участі страхової,
-            тож у базах — "чисто". Але під красивим зовнішнім виглядом може
-            ховатися серйозне ушкодження кузова чи геометрії.
+            {t("risks.textCellOfRisk5")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
           <h4 className={style.headerCellOfRisk}>
-            Складне спілкування з продавцем.
+            {t("risks.headerCellOfRisk6")}
           </h4>
           <p className={style.textCellOfRisk}>
-            Якщо авто продає перекупник, його головна мета — прибуток, а не
-            чесність. Часто реальний стан машини приховується або подається в
-            "кращому світлі".
+            {t("risks.textCellOfRisk6")}
           </p>
         </div>
       </div>

@@ -4,21 +4,22 @@ import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsInstagram, BsFacebook } from "react-icons/bs";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer: FC = () => {
+  const { t } = useTranslation();
   return (
     <footer className={style.footer}>
       <div className={style.footerContainer}>
-        {/* Блок контактів */}
         <div className={style.contactBlock}>
-          <h3 className={style.blockTitle}>Контакти</h3>
+          <h3 className={style.blockTitle}>{t("footer.contacts")}</h3>
           <div className={style.contactItem}>
             <IoLocationOutline className={style.icon} />
-            <span>вулиця Охтирська, 8, Київ, 01138</span>
+            <span>{t("footer.address")}</span>
           </div>
           <div className={style.contactItem}>
             <IoTimeOutline className={style.icon} />
-            <span>Пн-Пт: 9:00-18:00</span>
+            <span>{t("footer.time")}</span>
           </div>
           <div className={style.contactItem}>
             <FaPhoneAlt className={style.icon} />
@@ -33,7 +34,7 @@ const Footer: FC = () => {
         </div>
 
         <div className={style.socialBlock}>
-          <h3 className={style.blockTitle}>Соціальні мережі</h3>
+          <h3 className={style.blockTitle}>{t("footer.sotial")}</h3>
           <div className={style.socialLinks}>
             <a
               href="https://www.instagram.com/NR_car"
@@ -66,30 +67,31 @@ const Footer: FC = () => {
         </div>
 
         <div className={style.navBlock}>
-          <h3 className={style.blockTitle}>Навігація</h3>
+          <h3 className={style.blockTitle}>{t("footer.navigation")}</h3>
           <nav className={style.navLinks}>
             <a href="/" className={style.navLink}>
-              Головна
+              {t("footer.mainPage")}
             </a>
             <a href="/services" className={style.navLink}>
-              Послуги
+              {t("footer.services")}
             </a>
             <a href="/about" className={style.navLink}>
-              Про нас
+              {t("footer.aboutus")}
             </a>
             <a href="/blog" className={style.navLink}>
-              Блог
+              {t("footer.blog")}
             </a>
             <a href="/contacts" className={style.navLink}>
-              Контакти
+              {t("footer.contact")}
             </a>
           </nav>
         </div>
       </div>
 
-      {/* Копірайт */}
       <div className={style.copyright}>
-        <p>© {new Date().getFullYear()} NR Car. Всі права захищені</p>
+        <p>
+          © {new Date().getFullYear()} {t("footer.rights")}
+        </p>
       </div>
     </footer>
   );

@@ -1,8 +1,11 @@
 import style from "./AboutMe.module.css";
 import { useRef, FC } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutMe: FC = () => {
   const aboutMe = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
+
   return (
     <div className={style.wrapperForAboutMe} ref={aboutMe} id="aboutMe">
       <img
@@ -11,12 +14,7 @@ const AboutMe: FC = () => {
         className={style.mainImg}
       />
       <p className={style.text}>
-        Привіт! Мене звати Руслан, більше п’яти років я займаюсь автопідбором,
-        допомагаючи клієнтам знаходити ідеальні авто з урахуванням їхніх потреб
-        та бюджету. За ці роки я перевірив сотні різних автомобілів, навчився
-        розпізнавати навіть найменші технічні нюанси та приховані дефекти. Тому
-        хочу трошки більше розповісти про нюанси, які бувають при підборі
-        автівки, а також чому варто скористатися послугами автопідбору.
+        {t("aboutMe.description")}
       </p>
     </div>
   );

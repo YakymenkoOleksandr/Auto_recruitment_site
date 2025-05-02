@@ -1,37 +1,21 @@
 import styles from "./Risons.module.css";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 const Risons: FC = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.wrapperOfRisons}>
-      <h3 className={styles.headerOfRisons}>
-        Чому варто скористатися послугами з підбору авто?
-      </h3>
+      <h3 className={styles.headerOfRisons}>{t("risons.mainHeaderRisons")}</h3>
       <ul className={styles.listOfRisons}>
-        <li className={styles.pointOfRisons}>
-          Допомога у виборі оптимального варіанту за вашими критеріями.
-        </li>
-        <li className={styles.pointOfRisons}>
-          Пошук авто з оптимальним співвідношенням ціна/якість.
-        </li>
-        <li className={styles.pointOfRisons}>
-          Діагностика технічного стану авто.
-        </li>
-        <li className={styles.pointOfRisons}>
-          Допомога у торгах із продавцем.
-        </li>
-        <li className={styles.pointOfRisons}>
-          Не потрібно самостійно переглядати сотні оголошень.
-        </li>
-        <li className={styles.pointOfRisons}>
-          Консультація з оформлення документів.
-        </li>
+        <li className={styles.pointOfRisons}>{t("risons.pointOfRisons1")}</li>
+        <li className={styles.pointOfRisons}>{t("risons.pointOfRisons2")}</li>
+        <li className={styles.pointOfRisons}>{t("risons.pointOfRisons3")}</li>
+        <li className={styles.pointOfRisons}>{t("risons.pointOfRisons4")}</li>
+        <li className={styles.pointOfRisons}>{t("risons.pointOfRisons5")}</li>
+        <li className={styles.pointOfRisons}>{t("risons.pointOfRisons6")}</li>
       </ul>
-      <p className={styles.conclusion}>
-        Автопідбір не просто економить ваш час - він захищає від ризиків, а
-        професійний торг робить послугу вигідною. Результат: ви отримуєте
-        ідеальне авто без переплат, проблем і негативних емоцій.
-      </p>
+      <p className={styles.conclusion}>{t("risons.conclusion")}</p>
     </div>
   );
 };

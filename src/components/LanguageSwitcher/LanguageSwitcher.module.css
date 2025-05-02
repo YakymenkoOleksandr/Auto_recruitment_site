@@ -1,0 +1,28 @@
+.switcher {
+  display: flex;
+  gap: 8px;
+}
+
+.switcher button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.switcher button:hover {
+  background: #f0f0f0;
+}
+
+.switcher button.active {
+  background: #3cc0ef;
+  color: white;
+  border-color: #3cc0ef;
+}
+
+.switcher button:disabled {
+  cursor: default;
+  opacity: 1;
+}

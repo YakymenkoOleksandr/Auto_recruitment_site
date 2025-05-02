@@ -1,0 +1,102 @@
+{
+  "navigation": {
+    "phone": "+38 (095) 514-40-40",
+    "phone_title": "Call us",
+    "home": "Home page",
+    "full_service": "Full car selection service",
+    "inspection": "One-time car inspection"
+  },
+  "aboutMe": {
+    "description": "Hello! My name is Ruslan, I have been engaged in car selection for more than five years, helping clients find the perfect cars, taking into account their needs and budget. Over the years, I have tested hundreds of different cars, learned to recognize even the smallest technical nuances and hidden defects. Therefore, I want to tell you a little more about the nuances that occur when selecting a car, and also why it is worth using car selection services."
+  },
+  "risks": {
+    "mainHeaderRisks": "What are the problems with used cars?",
+    "headerCellOfRisk1": "Not all cars are equally reliable.",
+    "headerCellOfRisk2": "Twisted mileage.",
+    "headerCellOfRisk3": "Car after an accident? Repairs are not always of high quality.",
+    "headerCellOfRisk4": "Often the car requires expensive repairs.",
+    "headerCellOfRisk5": "Hidden history of road accidents.",
+    "headerCellOfRisk6": "Difficult communication with the seller.",
+    "textCellOfRisk1": "Every manufacturer has models that often break down or require expensive maintenance. Without experience, it is easy to buy a \"problem\" car, even if it looks perfect.",
+    "textCellOfRisk2": "One of the most common fraudulent schemes in the used car market. Unscrupulous sellers can easily \"rejuvenate\" a car by hundreds of thousands of kilometers.",
+    "textCellOfRisk3": "To sell a car faster, owners often turn to cheap craftsmen, use questionable materials and neglect restoration technology.",
+    "textCellOfRisk4": "The time is approaching for replacing expensive components (timing belt, turbine, gearbox, chassis).",
+    "textCellOfRisk5": "Many owners repair their cars after an accident without the participation of the insurance company, so the databases are \"clean\". But under the beautiful appearance there may be serious damage to the body or geometry.",
+    "textCellOfRisk6": "If a car is sold by a reseller, his main goal is profit, not honesty. Often the real condition of the car is hidden or presented in a \"better light\""
+  },
+  "risons": {
+    "mainHeaderRisons": "Why should you use car matching services?",
+    "pointOfRisons1": "Help in choosing the best option according to your criteria.",
+    "pointOfRisons2": "Search for a car with an optimal price/quality ratio.",
+    "pointOfRisons3": "Diagnosis of the technical condition of the car.",
+    "pointOfRisons4": "Help in bargaining with the seller.",
+    "pointOfRisons5": "You don't need to go through hundreds of ads yourself.",
+    "pointOfRisons6": "Consultation on the preparation of documents.",
+    "conclusion": "Car selection not only saves your time - it protects you from risks, and professional trading makes the service profitable. The result: you get the perfect car without overpayments, problems and negative emotions."
+  },
+  "stages": {
+    "mainHeaderStages": "Turnkey auto selection",
+    "items": [
+      {
+        "title": "1. Consultation and definition of criteria",
+        "text": "The first stage is to determine the desired car or several models that meet your criteria. We discuss the budget, acceptable years of car production, mileage and equipment. We also agree on the price for the turnkey car selection service."
+      },
+      {
+        "title": "2. Signing the contract",
+        "text": "After agreeing on all the requirements for the desired car and the price for the service, we meet and sign an agreement on the provision of car selection services."
+      },
+      {
+        "title": "3. Search for options",
+        "text": "All cars that meet your criteria are analyzed and risky options are eliminated. The most attractive cars are selected and sent for approval."
+      },
+      {
+        "title": "4. Online review and approval",
+        "text": "If you like one of the cars sent, then we talk to the seller and agree on an on-site review. If not, then we continue searching for a car that will be more suitable for you."
+      },
+      {
+        "title": "5. On-site review of the best options",
+        "text": "During on-site diagnostics, we check the paintwork, geometry, condition of the interior, do computer diagnostics, determine the mileage, errors, the presence of airbags. A photo and video report is made on the condition of the car and its shortcomings, as well as a conclusion on whether this car should be considered for diagnostics at a service station."
+      },
+      {
+        "title": "6. Detailed diagnostics at the service station",
+        "text": "Depending on the car and your preferences, we agree with the necessary service station, where we do a more detailed review of the chassis of the car, endoscopy to determine the condition of the engine cylinders, and mechanics also give their opinion on the need to replace certain parts of the car. At this stage, you also receive a report on the work done in photo and video format."
+      },
+      {
+        "title": "7. Transaction support",
+        "text": "If the car passes the service station and meets your parameters, there is a negotiation with the seller, based on the real market value of the car, its condition and identified defects, we agree on the price. After agreeing on the price, we annonymize the re-registration of the car at the MREO."
+      }
+    ]
+  },
+  "stagesOneTime": {
+    "mainHeaderStages": "One-time car inspection",
+    "items": [
+      {
+        "title": "1. Consultation",
+        "text": "You call us about the selected car, we discuss the details of the brand, model, configuration of units and assemblies of the car. We agree on an inspection at a service station or at a place of your choice at a certain time. We discuss payment."
+      },
+      {
+        "title": "2. Car Review",
+        "text": "You are provided with a photo and video report on the condition of the car, if the car is inspected at a service station, a possible report with endoscopy of the engine cylinders. You are also provided with a conclusion on the condition of the car and a conclusion on whether it is worth buying."
+      }
+    ]
+  },
+  "photoCarousel": {
+    "headerMyCarSearch": "My auto-picks"
+  },
+  "onTheMap": {
+    "headerForMapBlock": "We are on the map"
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "address": "8 Okhtyrska Street, Kyiv, 01138",
+    "time": "Mon-Fri: 9:00-18:00",
+    "sotial": "Social Networks",
+    "navigation": "Navigation",
+    "mainPage": "Home",
+    "services": "Services",
+    "aboutus": "About us",
+    "blog": "Blog",
+    "contact": "Contacts",
+    "rights": "NR Car. All rights reserved"
+  }
+}
