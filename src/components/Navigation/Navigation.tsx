@@ -2,6 +2,7 @@ import style from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 interface NavigationProps {
   isOpen: boolean;
@@ -64,6 +65,9 @@ const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
             {t("navigation.inspection")}
           </NavLink>
         </li>
+        
+          <LanguageSwitcher />
+        
       </ul>
     </nav>
   );

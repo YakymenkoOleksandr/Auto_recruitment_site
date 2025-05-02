@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import SocialMediaNavigation from "../SocialMediaNavigation/SocialMediaNavigation";
 import Logo from "../Logo/Logo";
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const Header: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -53,7 +52,6 @@ const Header: FC = () => {
       </div>
 
       <Navigation isOpen={isOpen} handleScrolTo={handleScrolTo} />
-      <LanguageSwitcher />
       <SocialMediaNavigation isOpen={isOpen} />
     </header>
   );
