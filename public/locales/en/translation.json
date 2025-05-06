@@ -85,62 +85,38 @@
     "items": [
       {
         "id": 1,
-        "photo": "../../../public/img/Mazda.jpg",
+        "photo": "./img/Mazda.jpg",
         "coment": "We were choosing between a Ford Fusion and a Mazda 6, as a result we found a wonderful Mazda 6: Grand Touring equipment, 2.5, America with minimal damage, 2017, 148 thousand km. There are cracks on the silent blocks, which was a very good bargain. Starting price 16500 We took it for 15500. Do you want to choose the best car on the market for your budget? I'm waiting for you on Telegram/Instagram or call 0955144040",
         "car": ""
       },
       {
         "id": 2,
-        "photo": "../../../public/img/Audi.jpg",
+        "photo": "./img/Audi.jpg",
         "coment": "In 10 days, we found the best Audi Q5 in Kyiv within a budget of up to $35,000. Only plastic elements are painted. 30,000 km of mileage. Serviced by a service center. Vincode: WA1GAAFYXN2021202. Are you planning to buy a used car? Are you unsure about your choice? Do you want to find the best option on the market for your budget? I am waiting for you on Telegram/Instagram or 0955144040, and I will help you with this matter.",
         "car": ""
       },
       {
         "id": 3,
-        "photo": "",
-        "coment": "",
+        "photo": "./img/Ford.jpg",
+        "coment": "Here is the result of another turnkey selection. 2.5 engine, gas-petrol + HBO under warranty, 2016 (restyling), 141,000 km mileage. Watch the video on the condition and inspection of the car on Instagram. Do you want to find the best option on the market within your budget? Call 0955144040.",
         "car": ""
       },
       {
         "id": 4,
-        "photo": "",
-        "coment": "",
+        "photo": "./img/Nisan.jpg",
+        "coment": "Turnkey was found in Vinnytsia, there was no decent option in Kyiv. This car is in its native colors. Serviced at an official service. 109 thousand km. Excellent equipment. The variator works perfectly (no jolts or errors). Call 0955144040.",
         "car": ""
       },
       {
         "id": 5,
-        "photo": "",
-        "coment": "",
+        "photo": "./img/Mazda_1.jpg",
+        "coment": "Initially, they wanted a Camry, then I started looking at the Mazda 6, since it was a more youthful and interesting car, but I came across a lot of junk... And so I decided to look at the Mazda 3 in the latest body, it wins in technology and design. The market price of such cars is 18k, we found it for 15,700. We discussed all the details about the body, and took it for 14,300. And now about the characteristics: 2019, 2.5 petrol engine, 115 km of mileage and cool equipment. Do you want to choose the best car on the market for your budget? Call 0955144040.",
         "car": ""
       },
       {
         "id": 6,
-        "photo": "",
-        "coment": "",
-        "car": ""
-      },
-      {
-        "id": 7,
-        "photo": "",
-        "coment": "",
-        "car": ""
-      },
-      {
-        "id": 8,
-        "photo": "",
-        "coment": "",
-        "car": ""
-      },
-      {
-        "id": 9,
-        "photo": "",
-        "coment": "",
-        "car": ""
-      },
-      {
-        "id": 10,
-        "photo": "",
-        "coment": "",
+        "photo": "./img/Focus.jpg",
+        "coment": "Found a Focus with a new clutch and TCM unit. Those who have encountered such cars know that the clutch and transmission control unit (TCM). They have weak points, and repairs cost a lot of money. We searched for quite a long time, and reviewed a bunch of options, and the result - you can see here. More about my work on Instagram.",
         "car": ""
       }
     ]
