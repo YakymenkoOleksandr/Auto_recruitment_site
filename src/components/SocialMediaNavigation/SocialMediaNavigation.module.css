@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .wrapperOfSocial {
     display: flex;
     flex-direction: row;
