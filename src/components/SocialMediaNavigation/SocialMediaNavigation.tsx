@@ -20,7 +20,7 @@ const SocialMediaNavigation: FC<SocialMediaNavigationProps> = ({ isOpen }) => {
         <li>
           {" "}
           <a
-            href="https://t.me/your_channel"
+            href="https://t.me/rogozov07"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Telegram"
@@ -32,7 +32,7 @@ const SocialMediaNavigation: FC<SocialMediaNavigationProps> = ({ isOpen }) => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/your_profile"
+            href="https://www.instagram.com/nr_car?utm_source=qr&igsh=bG81a3J5M3JsNmt1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -44,7 +44,7 @@ const SocialMediaNavigation: FC<SocialMediaNavigationProps> = ({ isOpen }) => {
         </li>
         <li>
           <a
-            href="https://www.viber.com/your_profile"
+            href="viber://chat?number=+380955144040"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Viber"
