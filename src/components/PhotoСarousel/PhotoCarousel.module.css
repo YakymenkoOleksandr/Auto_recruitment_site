@@ -14,8 +14,8 @@
   box-shadow: 1px 1px 1px 1px rgba(175, 175, 255, 0.2);
   max-width: 100%;
   margin-bottom: 10px;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  aspect-ratio: 3/4;
 }
 
 .blockOfPhotoAndComent {
@@ -89,14 +89,14 @@
 /*Планшети*/
 @media (min-width: 768px) and (max-width: 1023px) {
   .galeryImg {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    aspect-ratio: 3/4;
   }
 }
 
 @media (min-width: 1024px) {
   .galeryImg {
-    width: 700px;
-    height: 550px;
+    width: 450px;
+    aspect-ratio: 3/4;
   }
 }
