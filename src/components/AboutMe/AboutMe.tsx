@@ -13,6 +13,7 @@ const AboutMe: FC = () => {
         alt="Руслан Науменко автоексперт"
         className={style.mainImg}
       />
+      <h1 className={style.mainHeader}>{t("aboutMe.mainHeaderOfSite")}</h1>
       <p className={style.text}>
         {t("aboutMe.description")}
       </p>

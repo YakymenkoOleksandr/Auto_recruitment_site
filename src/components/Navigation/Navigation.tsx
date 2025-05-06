@@ -65,10 +65,8 @@ const Navigation: FC<NavigationProps> = ({ isOpen, handleScrolTo }) => {
             {t("navigation.inspection")}
           </NavLink>
         </li>
-        
-          <LanguageSwitcher />
-        
       </ul>
+      <LanguageSwitcher />
     </nav>
   );
 };

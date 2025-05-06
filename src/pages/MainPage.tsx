@@ -15,8 +15,8 @@ const MainPage: FC = () => {
     <div>
       <Header />
       <AboutMe />
-      <Risks />
       <Risons />
+      <Risks />
       <Stages />
       <OneTimeCarInspection />
       <SearchAutoAllDay />

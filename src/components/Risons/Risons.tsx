@@ -6,7 +6,7 @@ const Risons: FC = () => {
   const { t } = useTranslation();
   return (
     <div className={styles.wrapperOfRisons}>
-      <h3 className={styles.headerOfRisons}>{t("risons.mainHeaderRisons")}</h3>
+      <h2 className={styles.headerOfRisons}>{t("risons.mainHeaderRisons")}</h2>
       <ul className={styles.listOfRisons}>
         <li className={styles.pointOfRisons}>{t("risons.pointOfRisons1")}</li>
         <li className={styles.pointOfRisons}>{t("risons.pointOfRisons2")}</li>

@@ -26,7 +26,7 @@ const Stages: FC = () => {
   return (
     <div ref={stagesRef} id="stages" className={style.wrapper}>
       <div className={style.wrapperForStages}>
-        <h2 className={style.titleForStages}>{t("searchAutoAllDay.mainHeaderSearchAutoAllDay")}</h2>
+        <h4 className={style.titleForStages}>{t("searchAutoAllDay.mainHeaderSearchAutoAllDay")}</h4>
         <ul className={style.listForStages}>
           {stages.map(
             (stage: { title: string; text: string }, index: number) => (

@@ -32,9 +32,9 @@ export default function OneTimeCarInspection() {
       className={style.wrapper}
     >
       <div className={style.wrapperForStages}>
-        <h2 className={style.titleForStages}>
+        <h4 className={style.titleForStages}>
           {t("stagesOneTime.mainHeaderStages")}
-        </h2>
+        </h4>
         <ul className={style.listForStages}>
           {stagesOneTime.map((stage, index) => (
             <li key={index} className={style.pointOfListForStages}>

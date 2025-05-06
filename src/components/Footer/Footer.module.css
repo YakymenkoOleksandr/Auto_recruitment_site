@@ -28,7 +28,7 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background: #4da6ff;
+  background: #fff;
 }
 
 .contactItem {
@@ -63,6 +63,11 @@
 .socialIcon {
   margin-right: 10px;
   font-size: 20px;
+  color: #fff;
+}
+
+.socialIcon:hover{
+  color: #4da6ff;
 }
 
 .navLinks {
@@ -86,6 +91,15 @@
   border-top: 1px solid #333;
   color: #aaa;
   font-size: 14px;
+}
+
+.contacts{
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts:hover{
+  color: #4da6ff;
 }
 
 @media (max-width: 768px) {

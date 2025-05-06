@@ -12,45 +12,45 @@ const Risks: FC = () => {
       </h3>
       <div className={style.wrapperForRisons}>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>
+          <p className={style.headerCellOfRisk}>
             {t("risks.headerCellOfRisk1")}
-          </h4>
+          </p>
           <p className={style.textCellOfRisk}>
             {t("risks.textCellOfRisk1")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>{t("risks.headerCellOfRisk2")}</h4>
+          <p className={style.headerCellOfRisk}>{t("risks.headerCellOfRisk2")}</p>
           <p className={style.textCellOfRisk}>
             {t("risks.textCellOfRisk2")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>
+          <p className={style.headerCellOfRisk}>
             {t("risks.headerCellOfRisk3")}
-          </h4>
+          </p>
           <p className={style.textCellOfRisk}>
             {t("risks.textCellOfRisk3")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>
+          <p className={style.headerCellOfRisk}>
             {t("risks.headerCellOfRisk4")}
-          </h4>
+          </p>
           <p className={style.textCellOfRisk}>
             {t("risks.textCellOfRisk4")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>{t("risks.headerCellOfRisk5")}</h4>
+          <p className={style.headerCellOfRisk}>{t("risks.headerCellOfRisk5")}</p>
           <p className={style.textCellOfRisk}>
             {t("risks.textCellOfRisk5")}
           </p>
         </div>
         <div className={style.cellOfRisk}>
-          <h4 className={style.headerCellOfRisk}>
+          <p className={style.headerCellOfRisk}>
             {t("risks.headerCellOfRisk6")}
-          </h4>
+          </p>
           <p className={style.textCellOfRisk}>
             {t("risks.textCellOfRisk6")}
           </p>

@@ -58,6 +58,7 @@ const PhotoCarousel: FC = () => {
                 <button
                   onClick={hendlerMinus}
                   className={style.buttonForGalerySwitch}
+                  aria-label="Попереднє фото"
                 >
                   <FiArrowLeftCircle className={style.svgForGalery} />
                 </button>
@@ -66,28 +67,32 @@ const PhotoCarousel: FC = () => {
                   onClick={hendlerMinus}
                   className={style.buttonForGalerySwitch}
                   disabled
+                  aria-label="Попереднє фото"
+                  aria-disabled="true"
                 >
                   <FiArrowLeftCircle className={style.svgForGaleryDis} />
                 </button>
               )}
               <img
                 src={currentPhoto?.photo}
-                alt="Тут мало бути фото авто"
+                alt={currentPhoto?.car ? `Фото ${currentPhoto.car}` : "Фото автомобіля"}
                 className={style.galeryImg}
               />
               {numOfFoto < photoArray.length ? (
                 <button
                   onClick={hendlerPlus}
                   className={style.buttonForGalerySwitch}
+                  aria-label="Наступне фото"
                 >
-                  {" "}
-                  <FiArrowRightCircle className={style.svgForGalery} />{" "}
+                  <FiArrowRightCircle className={style.svgForGalery} />
                 </button>
               ) : (
                 <button
                   onClick={hendlerPlus}
                   className={style.buttonForGalerySwitch}
                   disabled
+                  aria-label="Наступне фото"
+                  aria-disabled="true"
                 >
                   <FiArrowRightCircle className={style.svgForGaleryDis} />
                 </button>

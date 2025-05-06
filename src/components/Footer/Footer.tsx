@@ -11,7 +11,7 @@ const Footer: FC = () => {
     <footer className={style.footer}>
       <div className={style.footerContainer}>
         <div className={style.contactBlock}>
-          <h3 className={style.blockTitle}>{t("footer.contacts")}</h3>
+          <h6 className={style.blockTitle}>{t("footer.contacts")}</h6>
           <div className={style.contactItem}>
             <IoLocationOutline className={style.icon} />
             <span>{t("footer.address")}</span>
@@ -22,12 +22,12 @@ const Footer: FC = () => {
           </div>
           <div className={style.contactItem}>
             <FaPhoneAlt className={style.icon} />
-            <a href="tel:+380955144040">+38 (095) 514-40-40</a>
+            <a href="tel:+380955144040" className={style.contacts}>+38 (095) 514-40-40</a>
           </div>
         </div>
 
         <div className={style.socialBlock}>
-          <h3 className={style.blockTitle}>{t("footer.sotial")}</h3>
+          <h6 className={style.blockTitle}>{t("footer.sotial")}</h6>
           <div className={style.socialLinks}>
             <a
               href="https://www.instagram.com/NR_car"
@@ -36,7 +36,7 @@ const Footer: FC = () => {
               className={style.socialLink}
             >
               <BsInstagram className={style.socialIcon} />
-              <span>Instagram</span>
+              <span className={style.contacts}>Instagram</span>
             </a>
             <a
               href="https://t.me/rogozov07"
@@ -45,7 +45,7 @@ const Footer: FC = () => {
               className={style.socialLink}
             >
               <FaTelegramPlane className={style.socialIcon} />
-              <span>Telegram</span>
+              <span className={style.contacts}>Telegram</span>
             </a>
           </div>
         </div>
