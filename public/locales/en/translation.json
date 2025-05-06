@@ -98,5 +98,26 @@
     "blog": "Blog",
     "contact": "Contacts",
     "rights": "NR Car. All rights reserved"
+  },
+  "searchAutoAllDay": {
+    "mainHeaderSearchAutoAllDay": "Autoexpert for the day",
+    "items": [
+      {
+        "title": "1. Consultation and determination of criteria",
+        "text": "If you need a car consultant for a day, then we will arrange a car according to your criteria. I will tell you the details of different brands and models of cars, after which we will arrange a home for the day if you are ready to work look at the car. Let's look at the car you want. Then we'll go and look at it throughout the day. auto."
+      },
+      {
+        "title": "2. Day to look at cars",
+        "text": "It is important and important to look around the car that you have been tagged with. You can look around, notice damage, drive and other nuances on the car."
+      },
+      {
+        "title": "3. A look at the service station",
+        "text": "When you get a car, please take a look at the service station to analyze the need for replacement of these and other spare parts. Determine what kind of investment in repairs and maintenance the car will require."
+      },
+      {
+        "title": "4. Bargaining with the seller",
+        "text": "On the basis of the extracted information, looking at the data from the service station about the \"nuances\" that are present in the car, traded with the seller, we will definitely reduce the price of the car."
+      }
+    ]
   }
 }

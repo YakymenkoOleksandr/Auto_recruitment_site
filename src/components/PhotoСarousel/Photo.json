@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "photo": "https://cdn.pixabay.com/photo/2016/05/06/16/32/car-1376190_1280.jpg",
-    "coment": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus.",
-    "car": "Марка модель"
+    "photo": "../../../public/img/Mazda.jpg",
+    "coment": "Выбирали между Фордом Фьюжином  и Маздой 6, по итогу нашли прекрасную шестерку: Комплектация Гранд Туринг 2.5 Америка с мин повреждениями 2017 год 148 тыс км пробега.  Есть трещины на сайлентблоках, на что был очень хороший торг. Стартовая цена 16500 Забрали за 15500. Хочешь выбрать лучший авто на рынке в свой бюджет? Жду вас в Телеграм/Инстаграм или звоните 0955144040 ",
+    "car": ""
   },
   {
     "id": 2,
-    "photo": "https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_1280.jpg",
-    "coment": "",
+    "photo": "../../../public/img/Audi.jpg",
+    "coment": "За 10 дней нашли лучшую Ауди Q5 в Киеве в бюджете  до 35 тыс долларовю. Крешены только  пластиковые элементы. 30 тыс км пробега. Прошла СТО Винкод: WA1GAAFYXN2021202. Планируешь приобрести авто с пробегом?  Сомневаешься в выборе? Хочешь найти лучший вариант на рынке в свой бюджет? Жду вас в Телеграм/Инстаграм или 0955144040 и я помогу в этом вопросе.",
     "car": ""
   },
   {

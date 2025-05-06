@@ -7,6 +7,7 @@ import OneTimeCarInspection from "../components/OneTimeCarInspection/OneTimeCarI
 import AboutMe from "../components/AboutMe/AboutMe";
 import OnTheMap from "../components/OnTheMap/OnTheMap";
 import PhotoCarousel from "../components/PhotoСarousel/PhotoCarousel";
+import SearchAutoAllDay from "../components/SearchAutoAllDay/SearchAutoAllDay.tsx"
 import { FC } from "react";
 
 const MainPage: FC = () => {
@@ -18,6 +19,7 @@ const MainPage: FC = () => {
       <Risons />
       <Stages />
       <OneTimeCarInspection />
+      <SearchAutoAllDay />
       <PhotoCarousel />
       <OnTheMap />
       <Footer />
