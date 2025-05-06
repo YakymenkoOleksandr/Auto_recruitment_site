@@ -81,7 +81,69 @@
     ]
   },
   "photoCarousel": {
-    "headerMyCarSearch": "My auto-picks"
+    "headerMyCarSearch": "Мої автопідбори",
+    "items": [
+      {
+        "id": 1,
+        "photo": "../../../public/img/Mazda.jpg",
+        "coment": "We were choosing between a Ford Fusion and a Mazda 6, as a result we found a wonderful Mazda 6: Grand Touring equipment, 2.5, America with minimal damage, 2017, 148 thousand km. There are cracks on the silent blocks, which was a very good bargain. Starting price 16500 We took it for 15500. Do you want to choose the best car on the market for your budget? I'm waiting for you on Telegram/Instagram or call 0955144040",
+        "car": ""
+      },
+      {
+        "id": 2,
+        "photo": "../../../public/img/Audi.jpg",
+        "coment": "In 10 days, we found the best Audi Q5 in Kyiv within a budget of up to $35,000. Only plastic elements are painted. 30,000 km of mileage. Serviced by a service center. Vincode: WA1GAAFYXN2021202. Are you planning to buy a used car? Are you unsure about your choice? Do you want to find the best option on the market for your budget? I am waiting for you on Telegram/Instagram or 0955144040, and I will help you with this matter.",
+        "car": ""
+      },
+      {
+        "id": 3,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 4,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 5,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 6,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 7,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 8,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 9,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      },
+      {
+        "id": 10,
+        "photo": "",
+        "coment": "",
+        "car": ""
+      }
+    ]
   },
   "onTheMap": {
     "headerForMapBlock": "We are on the map"

@@ -21,7 +21,9 @@ export default function OneTimeCarInspection() {
     }
   };
 
-  const stagesOneTime = t("stagesOneTime.items", { returnObjects: true }) as StageItem[];
+  const stagesOneTime = t("stagesOneTime.items", {
+    returnObjects: true,
+  }) as StageItem[];
 
   return (
     <div
@@ -30,7 +32,9 @@ export default function OneTimeCarInspection() {
       className={style.wrapper}
     >
       <div className={style.wrapperForStages}>
-        <h2 className={style.titleForStages}>{t("stagesOneTime.mainHeaderStages")}</h2>
+        <h2 className={style.titleForStages}>
+          {t("stagesOneTime.mainHeaderStages")}
+        </h2>
         <ul className={style.listForStages}>
           {stagesOneTime.map((stage, index) => (
             <li key={index} className={style.pointOfListForStages}>
