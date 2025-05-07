@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://auto-recruitment-site.vercel.app/sitemap.xml
