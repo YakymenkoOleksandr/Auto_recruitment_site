@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://autopidbir-kyiv-nr-car.vercel.app/sitemap.xml
+Sitemap: https://www.autopidbir-kyiv-nr-car.kyiv.ua/sitemap.xml
